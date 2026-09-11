@@ -493,6 +493,8 @@ export interface SimulationEvent {
   phase: Phase;
   outcome: "accepted" | "failed" | "external" | "system";
   ruleId: string;
+  /** Deterministic candidate provenance for consumers that need exact intent matching. */
+  candidateKey?: string;
   actorId?: string;
   targetId?: string;
   inputs: Record<string, number>;
