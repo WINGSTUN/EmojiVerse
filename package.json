@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run --exclude tests/ecology.soak.test.ts",
+    "test:soak": "vitest run tests/ecology.soak.test.ts",
     "test:watch": "vitest"
   },
   "devDependencies": {
